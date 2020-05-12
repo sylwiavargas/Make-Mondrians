@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
       clicked.style.backgroundImage = `url(${image})`;
     }
 
-  return fetch('https://api.giphy.com/v1/gifs/random?api_key=lcEjvxE7nYztdiwFzKVR1TtlT7SKP9jC&tag=&rating=G')
+  return fetch('https://api.giphy.com/v1/gifs/random?api_key=lcEjvxE7nYztdiwFzKVR1TtlT7SKP9jC&tag=cats&rating=G')
   .then(response => response.json())
   .then(parsed => parsed.data.image_original_url)
   .then(slapItOnTheDom);
